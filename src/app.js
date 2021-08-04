@@ -32,19 +32,19 @@ app.set("views",static_path);
 hbs.registerPartials(partials_path);
 
 
-app.get('/', (req,res) => {
+app.get('https://codedamn-ui.github.io/mernproject/', (req,res) => {
     res.render("index")
 })
 
-app.get('/registration', (req,res) => {
+app.get('https://codedamn-ui.github.io/mernproject/registration', (req,res) => {
     res.render("registration")
 })
 
-app.get('/login', (req,res) => {
+app.get('https://codedamn-ui.github.io/mernproject/login', (req,res) => {
     res.render("login")
 })
 
-app.post('/registration', async (req,res) => {
+app.post('https://codedamn-ui.github.io/mernproject/registration', async (req,res) => {
    try{
        const password = req.body.password;
        const cpassword = req.body.confirmpassword;
@@ -78,7 +78,7 @@ app.post('/registration', async (req,res) => {
    }
 })
 
-app.post('/login', async (req,res) => {
+app.post('https://codedamn-ui.github.io/mernproject/login', async (req,res) => {
     try{
         const logEmail = req.body.email;
         const logPass = req.body.password;
